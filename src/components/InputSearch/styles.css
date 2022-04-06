@@ -6,7 +6,7 @@
   .input-search input{
     padding-right: 60px;
     margin-top: 10px;
-    width: 365px;
+    width: 285px;
     height: 60px;
     background: #FFFFFF;
     border: 2px solid #E0E0E0;
@@ -40,16 +40,27 @@
     color: #FFFFFF;
   }
 
-  @media ( min-width: 415px ){
-    .input-search {
-      margin-right: 100px;
-    }
+  @media (min-width: 376px) {
 
+  }
+  @media ( min-width: 426px){
+  
+  }
+  @media ( min-width: 769px){
+  
+  }
+  @media ( min-width: 1024px){
     .input-search input{
-      margin-top: 0px;
+      margin-left: 40px;
     }
-
-    .input-search button{
-      top: 10px
+  }
+  @media ( min-width: 1440px){
+    .input-search input{
+      margin-left: -150px;
     }
-}
+  }
+  @media ( min-width: 1500px){
+    .input-search input{
+      margin-left: -300px;
+    }
+  }

@@ -67,3 +67,13 @@
 .cart-product--remove button:hover{
     text-decoration: underline;
 }
+
+@media (min-width: 376px) {
+
+}
+@media ( min-width: 426px){
+
+}
+@media ( min-width: 769px){
+
+}

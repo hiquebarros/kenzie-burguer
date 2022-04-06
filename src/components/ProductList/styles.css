@@ -4,12 +4,12 @@
 }
 .container{
     display: flex;
-    margin-left: 25px;
+    margin-left: 10px;
     width: 1800px;
 }
 .container2{
     display: flex;
-    margin-left: 25px;
+    margin-left: 10px;
     width: 1000px;
 }
 .container-filtrado{
@@ -43,21 +43,37 @@
     color: #828282;
 }
 
-@media ( min-width: 415px ){
+@media (min-width: 375px) {
+
+}
+@media ( min-width: 425px){
+
+}
+@media ( min-width: 768px){
+    
+}
+@media (min-width: 1024px){
+    .container-padrao{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     .container {
         display: grid;
-        width: 960px;
-        height: 735px;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 90px;
+        width: 600px;
+        height: 600px;
+        margin-left: 10px;
         margin-top: 25px;
     }
     .container2 {
         display: grid;
-        width: 960px;
-        height: 735px;
+        width: 600px;
+        height: 600px;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 90px;
+        margin-left: 0px;
         margin-top: 25px;
     }
     .container-padrao{
@@ -65,11 +81,74 @@
     }
     .container-filtrado{
         overflow: hidden;
+        margin-top: 12px;
+        width: 600px;
     }
     .filter-details{
         display: flex;
         height: 30px;
         width: 900px;
-        margin: 25px 0 5px 100px;
+        margin: 25px 0 5px 20px;
+    }
+}
+@media (min-width: 1440px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 600px;
+        height: 600px;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    .container2 {
+        width: 600px;
+        height: 600px;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+    .container-padrao{
+        overflow: hidden;
+    }
+    .container-filtrado{
+        overflow: hidden;
+        margin-top: 12px;
+        width: 700px;
+    }
+    .filter-details{
+        display: flex;
+        height: 30px;
+        width: 900px;
+        margin: 5px 0 5px 70px;
+    }
+}
+@media (min-width: 1500px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 950px;
+        height: 750px;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+    .container2 {
+        width: 600px;
+        height: 600px;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+    .container-padrao{
+        overflow: hidden;
+    }
+    .container-filtrado{
+        overflow: hidden;
+        margin-top: 12px;
+        margin-left: 50px;
+        width: 1000px;
+    }
+    .filter-details{
+        display: flex;
+        height: 30px;
+        width: 900px;
+        margin: 5px 0 5px 70px;
     }
 }
