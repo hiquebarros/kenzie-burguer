@@ -34,8 +34,12 @@
        }
 }
 @media ( min-width: 1440px){
-
+    .header{
+        height: 139px;
+       }
 }
 @media ( min-width: 1500px){
-
+    .header{
+        height: 139px;
+       }
 }

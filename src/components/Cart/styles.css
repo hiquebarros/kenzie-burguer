@@ -9,7 +9,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 265px;
-    height: 45px;
+    min-height: 65px;
     background: #27AE60;
     border-radius: 5px 5px 0px 0px;
 }
