@@ -1,0 +1,110 @@
+.cart{
+    height: 223px;
+    width: 365px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.cart-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 365px;
+    height: 65px;
+    background: #27AE60;
+    border-radius: 5px 5px 0px 0px;
+}
+.cart-title h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+.cart-emptybag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    max-width: 365px;
+    height: 158px;
+    background: #F5F5F5;
+    border-radius: 0px 0px 5px 5px;
+}
+.cart-emptybag h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+}
+.cart-emptybag span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #828282;
+}
+.cart-payment{
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+    border-top: 2px solid #E0E0E0;
+}
+.cart-totalprice{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.cart-totalprice h2, .cart-remove h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #828282;
+}
+.cart-totalprice h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+}
+.cart-remove{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cart-removeall{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    position: static;
+    width: 343px;
+    height: 60px;
+    background: #E0E0E0;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 16px 0px;
+}
+
+@media ( min-width: 415px ){
+    .cart{
+        margin-right: 100px;
+        margin-top: 25px;
+        max-width: 365px;
+        height: 158px;
+    }
+    } 

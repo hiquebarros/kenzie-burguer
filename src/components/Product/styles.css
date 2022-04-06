@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;400&family=Nunito:wght@400;700&family=Poppins:wght@500&display=swap');
+.card{
+    width: 300px;
+    height: 346px;
+    background: #FFFFFF;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.card .img{
+    background: #F5F5F5;
+}
+
+.card img{
+    width: 177px;
+    height: 177px;
+}
+
+.card h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    text-align: left;
+}
+
+.card span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    text-align: left;
+    margin: 5px 0px;
+}
+
+.card h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #27AE60;
+    text-align: left;
+}
+
+.card button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    width: 106px;
+    height: 40px;
+    background: #27AE60;
+    border: 2px solid #27AE60;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    margin-top: 15px;
+}
+.card button:hover{
+    background-color: green;
+    border: none;
+}
+.card button:active{
+    transform: scale(0.98);
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+}
