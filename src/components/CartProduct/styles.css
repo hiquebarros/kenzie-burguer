@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 116,25px;
-    width: 100%;
+    width: 265px;
     background: #F5F5F5;
     border-radius: 0px 0px 5px 5px;
 }
@@ -68,12 +68,23 @@
     text-decoration: underline;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 375px) {
 
 }
-@media ( min-width: 426px){
+@media ( min-width: 425px){
 
 }
-@media ( min-width: 769px){
+@media ( min-width: 768px){
+    .cart-product{
+        width: 265px;
+    }
+}
+
+@media ( min-width: 1024px){
+    .cart-product{
+        width: 365px;
+    }
+}
+@media ( min-width: 1440px){
 
 }

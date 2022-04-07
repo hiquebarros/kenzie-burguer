@@ -127,7 +127,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         width: 950px;
         height: 750px;
-        margin-left: 10px;
+        margin-left: 160px;
         margin-top: 25px;
     }
     .container2 {
@@ -142,7 +142,7 @@
     .container-filtrado{
         overflow: hidden;
         margin-top: 12px;
-        margin-left: 50px;
+        margin-left: 160px;
         width: 1000px;
     }
     .filter-details{
