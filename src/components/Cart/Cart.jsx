@@ -19,7 +19,7 @@ function Cart({ currentSale, setCurrentSale }) {
       ) : (
         <div className="cart-fullbag">
           {currentSale.map((product) => {
-            return <CartProduct key={product.id} product={product} currentSale={currentSale} setCurrentSale={setCurrentSale}></CartProduct>;
+            return <CartProduct key={product.id} product={product} currentSale={currentSale} setCurrentSale={setCurrentSale}/>
           })}
           <div className="cart-payment">
             <div className="cart-totalprice">
