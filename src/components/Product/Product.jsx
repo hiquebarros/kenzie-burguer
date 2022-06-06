@@ -1,5 +1,4 @@
 import "./styles.css";
-import "./reset.css";
 
 function Product({ product, handleClick }) {
   return (

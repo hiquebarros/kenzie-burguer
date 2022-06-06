@@ -1,5 +1,4 @@
 import "./styles.css";
-import "./reset.css"
 import Product from "../Product/Product";
 
 function ProductList({
