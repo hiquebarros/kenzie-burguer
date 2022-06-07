@@ -22,9 +22,9 @@
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
     color: #333333;
     text-align: left;
+    margin: 15px 0px 10px 0;
 }
 
 .card span{
@@ -32,7 +32,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 16px;
     color: #828282;
     text-align: left;
     margin: 5px 0px;
@@ -43,9 +42,10 @@
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 24px;
     color: #27AE60;
     text-align: left;
+    margin: 0px;
+    padding: 5px 0px;
 }
 
 .card button{
@@ -64,9 +64,9 @@
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 10px;
     color: white;
-    margin-top: 15px;
+    margin: 5px 0 0 0;
 }
 .card button:hover{
     background-color: green;
@@ -79,14 +79,15 @@
 .product-info{
     display: flex;
     flex-direction: column;
-    margin: 20px 0 0 20px;
+    align-items: center;
+    justify-content: center;
 }
-@media (min-width: 375px) {
 
+.product-info--content{
+    text-align: left;
+    width: 90%;
 }
-@media ( min-width: 425px){
 
-}
 @media ( min-width: 768px){
     .card{
         width: 250px;

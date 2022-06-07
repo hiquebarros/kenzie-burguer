@@ -32,8 +32,3 @@
             margin-left: 100px;
         }
     }
-    @media ( min-width: 1500px){
-        .logo{
-            margin-right: 1000px;
-        }
-    }
