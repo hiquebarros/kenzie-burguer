@@ -1,16 +1,16 @@
 .container-padrao{
-    overflow: scroll;
     white-space: nowrap;
+    overflow: scroll;
 }
 .container{
     display: flex;
-    margin-left: 10px;
-    width: 1800px;
+    width: 100vw;
+    overflow-x: auto;
 }
 .container2{
     display: flex;
-    margin-left: 10px;
-    width: 1000px;
+    overflow-x: auto;
+    width: 100vw;
 }
 .container-filtrado{
     display: flex;
@@ -20,10 +20,8 @@
 }
 .filter-details{
     display: flex;
-    height: 30px;
-    width: 900px;
-    margin-left: 25px;
-    margin-bottom: 25px;
+    flex: row;
+    justify-content: left;
 }
 .filter-details h3{
     font-family: 'Inter';
@@ -32,6 +30,7 @@
     font-size: 26px;
     line-height: 34px;
     color: #333333;
+    margin: 0 0 10px 10px;
 }
 .filter-details h4{
     font-family: 'Inter';
@@ -39,19 +38,10 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 34px;
-    margin-left: 5px;
     color: #828282;
+    margin: 0 0 10px 10px;
 }
 
-@media (min-width: 375px) {
-
-}
-@media ( min-width: 425px){
-
-}
-@media ( min-width: 768px){
-    
-}
 @media (min-width: 1024px){
     .container-padrao{
         overflow: hidden;
@@ -65,16 +55,12 @@
         grid-template-columns: 1fr 1fr 1fr;
         width: 600px;
         height: 600px;
-        margin-left: 10px;
-        margin-top: 25px;
     }
     .container2 {
         display: grid;
         width: 600px;
         height: 600px;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 0px;
-        margin-top: 25px;
     }
     .container-padrao{
         overflow: hidden;
@@ -83,72 +69,5 @@
         overflow: hidden;
         margin-top: 12px;
         width: 600px;
-    }
-    .filter-details{
-        display: flex;
-        height: 30px;
-        width: 900px;
-        margin: 25px 0 5px 20px;
-    }
-}
-@media (min-width: 1440px){
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 600px;
-        height: 600px;
-        margin-left: 100px;
-        margin-top: 25px;
-    }
-    .container2 {
-        width: 600px;
-        height: 600px;
-        margin-left: 50px;
-        margin-top: 25px;
-    }
-    .container-padrao{
-        overflow: hidden;
-    }
-    .container-filtrado{
-        overflow: hidden;
-        margin-top: 12px;
-        width: 700px;
-    }
-    .filter-details{
-        display: flex;
-        height: 30px;
-        width: 900px;
-        margin: 5px 0 5px 70px;
-    }
-}
-@media (min-width: 1500px){
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 950px;
-        height: 750px;
-        margin-left: 160px;
-        margin-top: 25px;
-    }
-    .container2 {
-        width: 600px;
-        height: 600px;
-        margin-left: 50px;
-        margin-top: 25px;
-    }
-    .container-padrao{
-        overflow: hidden;
-    }
-    .container-filtrado{
-        overflow: hidden;
-        margin-top: 12px;
-        margin-left: 160px;
-        width: 1000px;
-    }
-    .filter-details{
-        display: flex;
-        height: 30px;
-        width: 900px;
-        margin: 5px 0 5px 70px;
     }
 }

@@ -18,11 +18,10 @@ function App() {
       .then((response) => response.json())
       .then((response) => setProductList(response))
       .catch((error) => console.log(error));
-    }, []);
-    console.log(productList)
+  }, []);
+  console.log(productList);
 
   function handleClick(product) {
-
     const found = currentSale.find((element) => {
       return element === product;
     });
@@ -40,8 +39,11 @@ function App() {
   }
 
   function filterCards(text) {
-    const filteredByCategory = productList.filter(({name, category}) => {
-      return name.toLowerCase().includes(text.toLowerCase()) || category.toLowerCase().includes(text.toLowerCase())
+    const filteredByCategory = productList.filter(({ name, category }) => {
+      return (
+        name.toLowerCase().includes(text.toLowerCase()) ||
+        category.toLowerCase().includes(text.toLowerCase())
+      );
     });
 
     setFilterCategory(text);
@@ -57,7 +59,7 @@ function App() {
         filterCards={filterCards}
         setFilterOn={setFilterOn}
         handleChange={handleChange}
-      ></Header>
+      />
       <div className="content">
         <ProductList
           productList={productList}
@@ -65,8 +67,8 @@ function App() {
           filterOn={filterOn}
           filteredProducts={filteredProducts}
           filterCategory={filterCategory}
-        ></ProductList>
-        <Cart currentSale={currentSale} setCurrentSale={setCurrentSale}></Cart>
+        />
+        <Cart currentSale={currentSale} setCurrentSale={setCurrentSale} />
       </div>
     </div>
   );

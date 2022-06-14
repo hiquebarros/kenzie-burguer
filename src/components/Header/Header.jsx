@@ -1,5 +1,5 @@
 import "./styles.css";
-import Logo from "../Logo/Logo";
+import logo from "../../img/logo.svg";
 import InputSearch from "../InputSearch/InputSearch";
 
 function Header({
@@ -12,14 +12,14 @@ function Header({
   return (
     <div className="header-container">
       <div className="header-content">
-        <Logo />
+        <img src={logo} />
         <InputSearch
           searchItem={searchItem}
           setSearchItem={setSearchItem}
           filterCards={filterCards}
           setFilterOn={setFilterOn}
           handleChange={handleChange}
-        ></InputSearch>
+        />
       </div>
     </div>
   );

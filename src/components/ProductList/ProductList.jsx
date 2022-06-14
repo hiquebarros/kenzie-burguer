@@ -19,7 +19,7 @@ function ProductList({
                 key={index}
                 product={product}
                 handleClick={handleClick}
-              ></Product>
+              />
             );
           })}
           </div>
@@ -37,7 +37,7 @@ function ProductList({
                   key={index}
                   product={product}
                   handleClick={handleClick}
-                ></Product>
+                />
               );
             })}
           </div>

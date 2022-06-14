@@ -68,12 +68,6 @@
     text-decoration: underline;
 }
 
-@media (min-width: 375px) {
-
-}
-@media ( min-width: 425px){
-
-}
 @media ( min-width: 768px){
     .cart-product{
         width: 265px;
@@ -84,7 +78,4 @@
     .cart-product{
         width: 365px;
     }
-}
-@media ( min-width: 1440px){
-
 }
