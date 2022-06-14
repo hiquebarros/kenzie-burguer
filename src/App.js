@@ -12,26 +12,23 @@ function App() {
   const [filterOn, setFilterOn] = useState(false);
   const [searchItem, setSearchItem] = useState("");
   const [currentSale, setCurrentSale] = useState([]);
-  //const [cartTotal, setCartTotal] = useState(0)
 
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
       .then((response) => response.json())
       .then((response) => setProductList(response))
       .catch((error) => console.log(error));
-  }, []);
+    }, []);
+    console.log(productList)
 
-  function handleClick(productId) {
-    const foundProduct = productList.find((product) => {
-      return product.id === parseInt(productId);
-    });
+  function handleClick(product) {
 
-    const found = currentSale.find((product) => {
-      return product.id === foundProduct.id;
+    const found = currentSale.find((element) => {
+      return element === product;
     });
 
     if (found === undefined) {
-      setCurrentSale([...currentSale, foundProduct]);
+      setCurrentSale([...currentSale, product]);
     }
   }
 
@@ -42,11 +39,12 @@ function App() {
     }
   }
 
-  function filterCards(category) {
-    const filteredByCategory = productList.filter((product) => {
-      return product.category === category;
+  function filterCards(text) {
+    const filteredByCategory = productList.filter(({name, category}) => {
+      return name.toLowerCase().includes(text.toLowerCase()) || category.toLowerCase().includes(text.toLowerCase())
     });
-    setFilterCategory(category);
+
+    setFilterCategory(text);
     setFilteredProducts(filteredByCategory);
     setFilterOn(true);
   }

@@ -11,7 +11,7 @@ function Product({ product, handleClick }) {
           <h3>{product.name}</h3>
           <span>{product.category}</span>
           <h5>R${product.price.toFixed(2).replace(".", ",")}</h5>
-          <button id={product.id} onClick={(evt) => handleClick(evt.target.id)}>
+          <button onClick={() => handleClick(product)}>
             Adicionar
           </button>
         </div>
