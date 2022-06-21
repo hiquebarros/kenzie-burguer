@@ -88,7 +88,7 @@
     width: 90%;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1100px){
     .card{
         width: 180px;
         height: 250px;
@@ -152,6 +152,7 @@
         line-height: 17px;
         color: white;
         margin-top: 5px;
+        cursor: pointer;
     }
     .card button:hover{
         background-color: green;

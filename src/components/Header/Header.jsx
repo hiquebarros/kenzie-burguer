@@ -1,5 +1,5 @@
 import "./styles.css";
-import logo from "../../img/logo.svg";
+import logo from "../../assets/logo.svg";
 import InputSearch from "../InputSearch/InputSearch";
 
 function Header({
